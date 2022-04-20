@@ -55,14 +55,14 @@ export default function TopHeader() {
 				{dropDownShow && (
 					<ul className={styles.menu}>
 						<li className={styles.profile}>
-							<Link href="/">
+							<Link href="/" passHref>
 								<div className={styles["menu-item"]}>
 									<span>My Profile</span>
 								</div>
 							</Link>
 						</li>
 						<li className={styles.group}>
-							<Link href="#">
+							<Link href="#" passHref>
 								<div className={styles["menu-item"]}>
 									<span>Group Chat</span>
 								</div>

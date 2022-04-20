@@ -2,6 +2,7 @@ import styles from "./profile.module.css";
 import WiderScreen from "./wider_screen";
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Profile() {
 	const { data: session, status } = useSession();
@@ -34,9 +35,9 @@ export default function Profile() {
 								Some info may be visible to other people
 							</p>
 						</div>
-						<a href="/edit_profile" className={styles["btn-edit"]}>
-							Edit
-						</a>
+						<Link href="/edit_profile" passHref>
+							<a className={styles["btn-edit"]}>Edit</a>
+						</Link>
 					</li>
 					<li>
 						<span>Photo</span>
