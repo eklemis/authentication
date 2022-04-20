@@ -1,14 +1,13 @@
 import PageHead from "../components/pageHead";
 import TopHeader from "../components/header";
-import Profile from "../components/profile";
+import EditProfile from "../components/edit_profile";
 import styles from "../styles/Home.module.css";
-import { useSession, getSession } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import Router from "next/router";
-export default function Home() {
+import Link from "next/link";
+import Image from "next/image";
+export default function EditProfilePage() {
 	const sessions = useSession();
-	const refreshedSession = async () => await getSession();
-	console.log("refreshedSession:", refreshedSession());
-	console.log("session:", sessions);
 	const { session, status } = sessions;
 	console.log("Session:", sessions);
 	if (status === "unauthenticated") {
@@ -21,18 +20,22 @@ export default function Home() {
 			{status === "loading" && <p>Loading...</p>}
 			{status === "authenticated" && (
 				<main className={styles.main}>
-					<h1>Personal Info</h1>
-					<p className={styles["main-caption"]}>
-						Basic info, like your name and photo
-					</p>
-					<Profile />
+					<div className={styles.left}>
+						<Link href="/" passHref>
+							<div className={styles["back-wrapper"]}>
+								<Image
+									src="/icons/arrow_back.svg"
+									width={15}
+									height={30}
+									alt=""
+								></Image>
+								<span>Back</span>
+							</div>
+						</Link>
+					</div>
+					<EditProfile />
 				</main>
 			)}
 		</div>
 	);
-}
-export async function getServerSideProps(context) {
-	return {
-		props: {},
-	};
 }

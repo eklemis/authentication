@@ -1,0 +1,21 @@
+.wrapper {
+	width: 100vw;
+	min-height: 100vh;
+	padding: 59px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	border-radius: 24px;
+}
+@media (min-width: 600px) {
+	.wrapper {
+		width: 474px;
+		min-height: 545px;
+		border: 1px solid #bdbdbd;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	.wrapper {
+		border-color: #bdbdbd;
+	}
+}

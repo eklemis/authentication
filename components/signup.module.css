@@ -1,0 +1,158 @@
+.wrapper__hor {
+	display: flex;
+	column-gap: 6px;
+	align-items: center;
+}
+.icon-wrapper {
+	width: 30px;
+	height: 18px;
+	position: relative;
+	object-fit: contain;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.title {
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: -0.035em;
+
+	color: #333333;
+	margin-top: 27px;
+	margin-bottom: 0px;
+}
+.text {
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: -0.035em;
+
+	color: #333333;
+	max-width: 319px;
+	margin-top: 14px;
+}
+.error {
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: -0.035em;
+
+	color: red;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 14.5px;
+}
+.form input {
+	padding: 13px;
+	padding-left: 47px;
+	border: 1px solid #bdbdbd;
+	box-sizing: border-box;
+	border-radius: 8px;
+}
+.form input[type="email"] {
+	background-color: transparent;
+	background-image: url("/icons/icon-email.svg");
+	background-repeat: no-repeat;
+	background-position-x: 16px;
+	background-position-y: center;
+	background-size: 20px 16px;
+}
+.form input[type="password"] {
+	background-image: url("/icons/lock.svg");
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: 16px;
+}
+.form input[type="submit"] {
+	border: none;
+	background: #2f80ed;
+	height: 38px;
+	margin-top: 8px;
+	padding: 0px;
+	border-radius: 8px;
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height */
+
+	text-align: center;
+	letter-spacing: -0.035em;
+
+	color: #ffffff;
+	cursor: pointer;
+}
+.wrapper__center {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 10px;
+}
+.wrapper__center * {
+	text-align: center;
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	/* identical to box height */
+
+	letter-spacing: -0.035em;
+
+	color: #828282;
+}
+.social-text {
+	margin-top: 20px;
+}
+.button-wrapper {
+	display: flex;
+	column-gap: 21px;
+	justify-content: center;
+	margin-top: 15px;
+}
+.wrapper__center button {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	border: 1px solid #c5c5c5;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.direction {
+	margin-top: 30px;
+}
+.direction a {
+	color: #2f80ed;
+}
+@media (prefers-color-scheme: dark) {
+	.icon-text,
+	.title,
+	.text {
+		color: #e0e0e0;
+	}
+	.direction,
+	.social-text {
+		color: #828282;
+	}
+	.form input:not([type="submit"]) {
+		background-color: transparent;
+		color: #828282;
+	}
+	.wrapper__center button {
+		background-color: transparent;
+	}
+}

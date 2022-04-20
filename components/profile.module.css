@@ -1,0 +1,125 @@
+.wrapper {
+	list-style: none;
+	padding: 0;
+}
+
+.wrapper li {
+	display: flex;
+	min-height: 72px;
+	align-items: center;
+	padding: 12px 20px;
+}
+.wrapper li:not(:last-child) {
+	border-bottom: 1px solid #e0e0e0;
+}
+.wrapper li:first-child {
+	justify-content: space-between;
+}
+.btn-edit {
+	border: 1px solid #828282;
+	box-sizing: border-box;
+	border-radius: 12px;
+	width: 95px;
+	height: 38px;
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	/* identical to box height */
+
+	letter-spacing: -0.035em;
+
+	color: #828282;
+	background-color: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.wrapper h2 {
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 33px;
+	/* identical to box height */
+
+	letter-spacing: -0.035em;
+
+	color: #000000;
+}
+.main-caption {
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.035em;
+
+	color: #828282;
+}
+.photo-holder {
+	position: relative;
+	width: 72px;
+	height: 72px;
+	padding: 0px;
+}
+.photo-holder img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 8px;
+}
+.wrapper li span {
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 18px;
+	/* identical to box height */
+
+	letter-spacing: -0.035em;
+
+	color: #bdbdbd;
+	text-transform: uppercase;
+	min-width: 80px;
+}
+.wrapper li p {
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 25px;
+	/* identical to box height */
+
+	letter-spacing: -0.035em;
+
+	color: #333333;
+	max-width: 470px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+@media (min-width: 600px) {
+	.wrapper li {
+		padding: 12px 50px;
+	}
+	.wrapper li span {
+		min-width: 200px;
+	}
+	.wrapper li p {
+		width: 470px;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	.wrapper li:not(:last-child) {
+		border-color: #828282;
+	}
+	.wrapper .title,
+	.wrapper .main-caption,
+	.wrapper li p,
+	.btn-edit {
+		color: #e0e0e0;
+	}
+}
