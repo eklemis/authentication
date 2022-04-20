@@ -19,7 +19,7 @@ export default function TosPage() {
 
 			<p>
 				Permission is granted to temporarily download one copy of the materials
-				on EK Solutions's Website for personal, non-commercial transitory
+				on EK Solutions&aposs Website for personal, non-commercial transitory
 				viewing only. This is the grant of a license, not a transfer of title,
 				and under this license you may not:
 			</p>
@@ -31,16 +31,16 @@ export default function TosPage() {
 					display;
 				</li>
 				<li>
-					attempt to reverse engineer any software contained on EK Solutions's
-					Website;
+					attempt to reverse engineer any software contained on EK
+					Solutions&aposs Website;
 				</li>
 				<li>
 					remove any copyright or other proprietary notations from the
 					materials; or
 				</li>
 				<li>
-					transferring the materials to another person or "mirror" the materials
-					on any other server.
+					transferring the materials to another person or &quotmirror&quot the
+					materials on any other server.
 				</li>
 			</ul>
 
@@ -59,12 +59,12 @@ export default function TosPage() {
 			<h2>3. Disclaimer</h2>
 
 			<p>
-				All the materials on EK Solutions’s Website are provided "as is". EK
-				Solutions makes no warranties, may it be expressed or implied, therefore
-				negates all other warranties. Furthermore, EK Solutions does not make
-				any representations concerning the accuracy or reliability of the use of
-				the materials on its Website or otherwise relating to such materials or
-				any sites linked to this Website.
+				All the materials on EK Solutions’s Website are provided &quotas
+				is&quot. EK Solutions makes no warranties, may it be expressed or
+				implied, therefore negates all other warranties. Furthermore, EK
+				Solutions does not make any representations concerning the accuracy or
+				reliability of the use of the materials on its Website or otherwise
+				relating to such materials or any sites linked to this Website.
 			</p>
 
 			<h2>4. Limitations</h2>
@@ -114,7 +114,7 @@ export default function TosPage() {
 			<h2>9. Governing Law</h2>
 
 			<p>
-				Any claim related to EK Solutions's Website shall be governed by the
+				Any claim related to EK Solutions&aposs Website shall be governed by the
 				laws of id without regards to its conflict of law provisions.
 			</p>
 		</>
